@@ -7,7 +7,7 @@
     "storybook": "start-storybook -p 9001 -c .storybook",
     "build-storybook": "build-storybook",
     "clean-dist": "rm -rf ./dist",
-    "build": "npm run clean-dist && NODE_ENV=production && babel ./components --out-dir ./dist"
+    "build-dist": "npm run clean-dist && NODE_ENV=production && babel components --out-dir dist --copy-files"
   },
   "repository": {
     "type": "git",
