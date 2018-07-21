@@ -5,7 +5,7 @@ Object.defineProperty(exports, "__esModule", {
 });
 exports.Header = undefined;
 
-var _Header = require('./components/Header');
+var _Header = require('./Header');
 
 var _Header2 = _interopRequireDefault(_Header);
 
