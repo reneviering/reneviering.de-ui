@@ -54,8 +54,8 @@ const styles = {
     animation: '4s linear fade-in',
     '@media(min-width: 1000px)': {
       top: '-12vw',
-      right: '-10vw',
-      maxWidth: '40vw',
+      right: '-2px',
+      maxWidth: '30vw',
     },
 
   }
