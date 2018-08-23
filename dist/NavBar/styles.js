@@ -14,13 +14,15 @@ function _defineProperty(obj, key, value) { if (key in obj) { Object.definePrope
 
 var styles = {
   NavBar: {
-    backgroundColor: 'white',
-    boxShadow: 'rgba(0, 0, 0, 0.2) 0px 2px 5px 0px',
+    backgroundColor: function backgroundColor(props) {
+      return 'rgba(255, 255, 255, ' + props.opacity + ')';
+    },
+    boxShadow: function boxShadow(props) {
+      return 'rgba(0, 0, 0, ' + 0.2 * props.opacity + ') 0px 2px 5px 0px';
+    },
     position: 'fixed',
-    width: '100%'
-  },
-  NavBarTransparent: {
-    opacity: 0.97
+    width: '100%',
+    zIndex: 10
   },
   NavBar__Items: _defineProperty({
     listStyleType: 'none',
@@ -36,12 +38,17 @@ var styles = {
 
   }, 'margin', '0 auto'),
   NavBar__Item: {
-    marginRight: 10,
-    fontFamily: _theme2.default.font.family.default
+    marginRight: 15,
+    fontFamily: _theme2.default.font.family.default,
+    lineHeight: '20px',
+    display: 'none',
+    '@media(min-width: 600px)': {
+      display: 'block'
+    }
   },
   NavBar__Link: {
-    color: 'black',
-    textDecoration: 'none'
+    textDecoration: 'none',
+    fontWeight: 400
   },
   NavBar__Brand: {
     display: 'flex',
