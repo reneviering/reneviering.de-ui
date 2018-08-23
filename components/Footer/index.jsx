@@ -5,7 +5,7 @@ import Link from '../Link';
 
 const styles = {
   Footer: {
-    backgroundColor: '#212121',
+    backgroundColor: '#2d3436',
     padding: 20,
     color: 'white'
   },

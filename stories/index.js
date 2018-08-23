@@ -7,6 +7,7 @@ import Teaser from '../components/Teaser';
 import Section from '../components/Section';
 import Footer from '../components/Footer';
 import Link from '../components/Link';
+import Button from '../components/Button';
 
 import 'normalize.css/normalize.css';
 
@@ -45,7 +46,13 @@ storiesOf('Start Page', module)
           </ul>
         </Section>
         <Section type="secondary" centered muchSpaceAround withBackgroundImage>
-            <h1>You want me for your next project? <Link href="mailto:hello@reneviering.com">Hire me</Link></h1>
+            <h1 style={{ textAlign: 'center' }}>
+              You want me for your next project?
+              <br />
+              <br />
+              <Link href="mailto:hello@reneviering.com" target="_self"><Button>Hire me</Button></Link>
+            </h1>
+
         </Section>
         <Footer />
       </Application>

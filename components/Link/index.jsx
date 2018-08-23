@@ -4,7 +4,8 @@ import injectSheet from 'react-jss';
 const styles = theme => ({
   Link: {
     textDecoration: 'none',
-    color: '#3498db'
+    color: '#3498db',
+    fontWeight: 400
   }
 });
 
