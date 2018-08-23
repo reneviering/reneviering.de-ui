@@ -2,14 +2,11 @@ import theme from '../../theme';
 
 const styles = {
   NavBar: {
-    backgroundColor: 'white',
-    boxShadow: 'rgba(0, 0, 0, 0.2) 0px 2px 5px 0px',
+    backgroundColor: props => `rgba(255, 255, 255, ${props.opacity})`,
+    boxShadow: props => `rgba(0, 0, 0, ${0.2 * props.opacity}) 0px 2px 5px 0px`,
     position: 'fixed',
     width: '100%',
-    zIndex: 10
-  },
-  NavBarTransparent: {
-    opacity: 0.97
+    zIndex: 10,
   },
   NavBar__Items: {
     listStyleType: 'none',
@@ -23,14 +20,17 @@ const styles = {
     maxWidth: theme.base.contentWidth,
     position: 'relative',
 
-    margin: '0 auto'
+    margin: '0 auto',
   },
   NavBar__Item: {
     marginRight: 15,
-    fontFamily: theme.font.family.default
+    fontFamily: theme.font.family.default,
+    display: 'none',
+    '@media(min-width: 600px)': {
+      display: 'block'
+    }
   },
   NavBar__Link: {
-    color: 'black',
     textDecoration: 'none'
   },
   NavBar__Brand: {

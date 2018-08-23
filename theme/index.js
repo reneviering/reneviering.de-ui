@@ -22,7 +22,7 @@ const theme = {
     default: {
       fontWeight: 200,
       fontSize: '18px',
-      lineHeight: '28px',
+      lineHeight: '20px',
       textRendering: 'optimizeLegibility',
       fontSmoothing: 'antialiased',
       '-webkit-font-smoothing': 'antialiased'

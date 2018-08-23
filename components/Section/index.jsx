@@ -77,9 +77,6 @@ const Section = ({ children, classes, type, withBackgroundImage=false }) => (
                 timeout={3000}
                 classNames="hexagon-image"
                 unmountOnExit
-                onExited={() => {
-                  console.log('exited…');
-                }}
               >
                 <div className={ classes.ImageContainer }>
                   <img className={ classes.Hexagons } src={ hexagons } />
