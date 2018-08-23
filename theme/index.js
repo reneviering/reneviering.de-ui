@@ -5,7 +5,7 @@ const theme = {
 
   link: {
     primary: {
-      color: '#1756a9'
+      color: '#0984e3'
     },
     secondary: {
       color: 'white'
@@ -22,7 +22,7 @@ const theme = {
     default: {
       fontWeight: 200,
       fontSize: '18px',
-      lineHeight: '20px',
+      lineHeight: '28px',
       textRendering: 'optimizeLegibility',
       fontSmoothing: 'antialiased',
       '-webkit-font-smoothing': 'antialiased'

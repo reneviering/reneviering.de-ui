@@ -59,5 +59,6 @@ class NavBar extends React.PureComponent {
     );
   }
 }
+// test
 
 export default withScrollHandling(injectSheet(styles)(NavBar));

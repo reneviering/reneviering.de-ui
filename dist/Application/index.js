@@ -8,13 +8,15 @@ var _react = require('react');
 
 var _react2 = _interopRequireDefault(_react);
 
+require('intersection-observer');
+
 var _reactJss = require('react-jss');
 
 var _reactJss2 = _interopRequireDefault(_reactJss);
 
-var _Header = require('../Header');
+var _NavBar = require('../NavBar');
 
-var _Header2 = _interopRequireDefault(_Header);
+var _NavBar2 = _interopRequireDefault(_NavBar);
 
 var _theme = require('../../theme');
 
@@ -34,17 +36,22 @@ var styles = {
     h3: Object.assign({}, _theme2.default.font.bold)
   },
   mainContent: {
-    paddingTop: '60px'
+    paddingTop: function paddingTop(props) {
+      return props.withTeaser ? 0 : '60px';
+    },
+    backgroundColor: 'white'
   }
 };
 
 var Application = function Application(_ref) {
   var children = _ref.children,
-      classes = _ref.classes;
+      classes = _ref.classes,
+      _ref$withTeaser = _ref.withTeaser,
+      withTeaser = _ref$withTeaser === undefined ? false : _ref$withTeaser;
   return _react2.default.createElement(
     _react2.default.Fragment,
     null,
-    _react2.default.createElement(_Header2.default, null),
+    _react2.default.createElement(_NavBar2.default, null),
     _react2.default.createElement(
       'main',
       { className: classes.mainContent },

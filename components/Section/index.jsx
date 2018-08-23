@@ -23,7 +23,7 @@ const styles = {
   },
   Section: {
     backgroundColor: props => backgroundColorForType[props.type] || 'white',
-    padding: props => props.muchSpaceAround ? '100px 60px' : '30px 20px',
+    padding: props => '120px 40px',
     position: 'relative'
   },
   ContentContainer: {
@@ -54,8 +54,8 @@ const styles = {
     animation: '4s linear fade-in',
     '@media(min-width: 1000px)': {
       top: '-12vw',
-      right: '-2px',
-      maxWidth: '30vw',
+      right: 0,
+      maxWidth: '35vw',
     },
 
   }
