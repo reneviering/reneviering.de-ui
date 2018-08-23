@@ -15,8 +15,6 @@ import { ThemeProvider } from 'react-jss';
 
 import theme from '../theme';
 
-import hexagons from '../assets/hexagons.svg';
-
 storiesOf('Start Page', module)
   .add('default',  () => (
     <ThemeProvider theme={ theme }>

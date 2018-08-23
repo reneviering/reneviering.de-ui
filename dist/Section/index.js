@@ -14,7 +14,7 @@ var _reactJss2 = _interopRequireDefault(_reactJss);
 
 var _reactTransitionGroup = require('react-transition-group');
 
-var _hexagons = require('../../assets/hexagons.svg');
+var _hexagons = require('./hexagons.svg');
 
 var _hexagons2 = _interopRequireDefault(_hexagons);
 

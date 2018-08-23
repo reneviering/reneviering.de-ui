@@ -1,8 +1,8 @@
 import React from 'react';
 import injectSheet from 'react-jss';
 
-import background from '../../assets/teaser.jpg';
-import avatar from '../../assets/avatar.jpg';
+import background from './teaser.jpg';
+import avatar from './avatar.jpg';
 
 
 const styles = {

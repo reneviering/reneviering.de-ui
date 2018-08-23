@@ -3,7 +3,7 @@ import injectSheet from 'react-jss';
 
 import { CSSTransition } from 'react-transition-group';
 
-import hexagons from '../../assets/hexagons.svg';
+import hexagons from './hexagons.svg';
 
 import Observer from 'react-intersection-observer';
 

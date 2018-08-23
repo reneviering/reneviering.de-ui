@@ -12,11 +12,11 @@ var _reactJss = require('react-jss');
 
 var _reactJss2 = _interopRequireDefault(_reactJss);
 
-var _teaser = require('../../assets/teaser.jpg');
+var _teaser = require('./teaser.jpg');
 
 var _teaser2 = _interopRequireDefault(_teaser);
 
-var _avatar = require('../../assets/avatar.jpg');
+var _avatar = require('./avatar.jpg');
 
 var _avatar2 = _interopRequireDefault(_avatar);
 
