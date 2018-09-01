@@ -3,7 +3,7 @@
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-exports.Button = exports.Link = exports.Teaser = exports.Section = exports.NavBar = exports.Application = undefined;
+exports.Footer = exports.Button = exports.Link = exports.Teaser = exports.Section = exports.NavBar = exports.Application = undefined;
 
 var _Application = require('./Application');
 
@@ -29,6 +29,10 @@ var _Button = require('./Button');
 
 var _Button2 = _interopRequireDefault(_Button);
 
+var _Footer = require('./Footer');
+
+var _Footer2 = _interopRequireDefault(_Footer);
+
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 exports.Application = _Application2.default;
@@ -37,3 +41,4 @@ exports.Section = _Section2.default;
 exports.Teaser = _Teaser2.default;
 exports.Link = _Link2.default;
 exports.Button = _Button2.default;
+exports.Footer = _Footer2.default;

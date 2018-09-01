@@ -4,6 +4,7 @@ import Section from './Section';
 import Teaser from './Teaser';
 import Link from './Link';
 import Button from './Button';
+import Footer from './Footer';
 
 export {
   Application,
@@ -11,5 +12,6 @@ export {
   Section,
   Teaser,
   Link,
-  Button
+  Button,
+  Footer
 };
