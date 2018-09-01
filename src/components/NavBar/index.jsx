@@ -28,7 +28,16 @@ const withScrollHandling = ComposedComponent => class extends React.Component {
   }
 
   render () {
-    return <ComposedComponent { ...this.props } isTransparent={ this.state.isTransparent } opacity={ this.state.opacity } color={`rgba(${255 * (1-this.state.opacity)}, ${255 * (1-this.state.opacity)}, ${255 * (1-this.state.opacity)}, 1)`}/>
+    return (
+      <ComposedComponent
+        { ...this.props }
+        isTransparent={ this.state.isTransparent }
+        opacity={ this.state.opacity }
+        color={`rgba(${255 * (1-this.state.opacity)}, ${255 * (1-this.state.opacity)}, ${255 * (1-this.state.opacity)}, 1)`}
+        backgroundColor={`rgba(255, 255, 255, ${this.state.opacity})`}
+        boxShadow={`rgba(0, 0, 0, ${0.2 * this.state.opacity}) 0px 2px 5px 0px`}
+      />
+    )
   }
 };
 
@@ -38,7 +47,7 @@ class NavBar extends React.PureComponent {
     const { classes } = this.props;
 
     return (
-      <nav className={ classes.NavBar }>
+      <nav className={ classes.NavBar } style={{ backgroundColor: this.props.backgroundColor, boxShadow: this.props.boxShadow }}>
         <ul className={ classes.NavBar__Items }>
           <li className={ classNames(classes.NavBar__Item, classes.NavBar__Brand) }>
             <a className={ classes.NavBar__Link } href="/" style={{ color: this.props.color }}>
