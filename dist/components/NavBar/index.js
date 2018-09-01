@@ -76,7 +76,14 @@ var withScrollHandling = function withScrollHandling(ComposedComponent) {
     }, {
       key: 'render',
       value: function render() {
-        return _react2.default.createElement(ComposedComponent, _extends({}, this.props, { isTransparent: this.state.isTransparent, opacity: this.state.opacity, color: 'rgba(' + 255 * (1 - this.state.opacity) + ', ' + 255 * (1 - this.state.opacity) + ', ' + 255 * (1 - this.state.opacity) + ', 1)' }));
+        console.log(this.state.opacity);
+        return _react2.default.createElement(ComposedComponent, _extends({}, this.props, {
+          isTransparent: this.state.isTransparent,
+          opacity: this.state.opacity,
+          color: 'rgba(' + 255 * (1 - this.state.opacity) + ', ' + 255 * (1 - this.state.opacity) + ', ' + 255 * (1 - this.state.opacity) + ', 1)',
+          backgroundColor: 'rgba(255, 255, 255, ' + this.state.opacity + ')',
+          boxShadow: 'rgba(0, 0, 0, ' + 0.2 * this.state.opacity + ') 0px 2px 5px 0px'
+        }));
       }
     }]);
 
@@ -101,7 +108,7 @@ var NavBar = function (_React$PureComponent) {
 
       return _react2.default.createElement(
         'nav',
-        { className: classes.NavBar },
+        { className: classes.NavBar, style: { backgroundColor: this.props.backgroundColor, boxShadow: this.props.boxShadow } },
         _react2.default.createElement(
           'ul',
           { className: classes.NavBar__Items },

@@ -9,12 +9,6 @@ function _defineProperty(obj, key, value) { if (key in obj) { Object.definePrope
 var styles = function styles(theme) {
   return {
     NavBar: {
-      backgroundColor: function backgroundColor(props) {
-        return 'rgba(255, 255, 255, ' + props.opacity + ')';
-      },
-      boxShadow: function boxShadow(props) {
-        return 'rgba(0, 0, 0, ' + 0.2 * props.opacity + ') 0px 2px 5px 0px';
-      },
       position: 'fixed',
       width: '100%',
       zIndex: 10
