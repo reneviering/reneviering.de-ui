@@ -3,8 +3,7 @@ import injectSheet from 'react-jss';
 
 import NavBar from '../NavBar';
 
-import theme from '../../theme';
-const styles = {
+const styles = theme => ({
   '@global': {
     '@import': `url('${theme.font.import}')`,
     body: {
@@ -26,7 +25,7 @@ const styles = {
     paddingTop: props => props.withTeaser ? 0 : '60px',
     backgroundColor: 'white'
   }
-}
+});
 
 const Application = ({ children, classes, withTeaser=false }) => (
   <React.Fragment>

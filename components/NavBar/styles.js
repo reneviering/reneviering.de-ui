@@ -1,6 +1,4 @@
-import theme from '../../theme';
-
-const styles = {
+const styles = theme => ({
   NavBar: {
     backgroundColor: props => `rgba(255, 255, 255, ${props.opacity})`,
     boxShadow: props => `rgba(0, 0, 0, ${0.2 * props.opacity}) 0px 2px 5px 0px`,
@@ -42,6 +40,6 @@ const styles = {
   Navbar__BrandText: {
     margin: 0
   }
-};
+});
 
 export default styles;
