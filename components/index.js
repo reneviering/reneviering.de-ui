@@ -5,6 +5,7 @@ import AwesomeTeaser from './AwesomeTeaser';
 import Anchor from './Anchor';
 import Button from './Button';
 import Footer from './Footer';
+import ThemeProvider from './ThemeProvider';
 
 export {
   Application,
@@ -13,5 +14,6 @@ export {
   AwesomeTeaser,
   Anchor,
   Button,
-  Footer
+  Footer,
+  ThemeProvider
 };
