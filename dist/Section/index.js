@@ -74,7 +74,7 @@ var styles = {
   Hexagons: {
     position: 'absolute',
     zIndex: 1,
-    animation: '4s linear fade-in',
+    animation: '2s linear fade-in',
     '@media(min-width: 1000px)': {
       top: '-12vw',
       right: 0,

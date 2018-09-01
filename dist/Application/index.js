@@ -8,8 +8,6 @@ var _react = require('react');
 
 var _react2 = _interopRequireDefault(_react);
 
-require('intersection-observer');
-
 var _reactJss = require('react-jss');
 
 var _reactJss2 = _interopRequireDefault(_reactJss);
