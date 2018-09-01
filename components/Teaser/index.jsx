@@ -1,13 +1,9 @@
 import React from 'react';
 import injectSheet from 'react-jss';
 
-import background from './teaser.jpg';
-import avatar from './avatar.jpg';
-
-
 const styles = {
   Teaser: {
-    backgroundImage: `url(${background})`,
+    backgroundImage: props => `url(${props.backgroundUrl})`,
     backgroundSize: 'cover',
     minHeight: '75vh',
     display: 'flex',
@@ -36,9 +32,9 @@ const styles = {
   }
 }
 
-const Teaser = ({ classes }) => (
+const Teaser = ({ classes, backgroundUrl, avatarUrl }) => (
   <header className={ classes.Teaser }>
-    <img className={ classes.Avatar } src={ avatar } alt="Avatar René Viering" />
+    <img className={ classes.Avatar } src={ avatarUrl } alt="Avatar René Viering" />
     <h1 className={ classes.Headline }>René Viering</h1>
     <p className={ classes.PersonInfo }>
       JavaScript Freelancer<br />

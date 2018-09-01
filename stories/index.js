@@ -15,11 +15,14 @@ import { ThemeProvider } from 'react-jss';
 
 import theme from '../theme';
 
+import avatar from '../static/avatar.jpg';
+import teaser from '../static/teaser.jpg';
+
 storiesOf('Start Page', module)
   .add('default',  () => (
     <ThemeProvider theme={ theme }>
       <Application withTeaser={true}>
-        <Teaser />
+        <Teaser avatarUrl={avatar} backgroundUrl={ teaser } />
         <Section type="primary">
           <h1>Hi, I'm René!</h1>
           <p>A freelance JavaScript developer with a passion for frontend technologies, especially single page apps. I prefer lean, targeted libraries and lightweight architectures that result in clean, testable code. That's why I value React and its functional programming principles a lot.</p>

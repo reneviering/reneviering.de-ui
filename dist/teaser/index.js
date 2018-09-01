@@ -12,19 +12,13 @@ var _reactJss = require('react-jss');
 
 var _reactJss2 = _interopRequireDefault(_reactJss);
 
-var _teaser = require('./teaser.jpg');
-
-var _teaser2 = _interopRequireDefault(_teaser);
-
-var _avatar = require('./avatar.jpg');
-
-var _avatar2 = _interopRequireDefault(_avatar);
-
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 var styles = {
   Teaser: {
-    backgroundImage: 'url(' + _teaser2.default + ')',
+    backgroundImage: function backgroundImage(props) {
+      return 'url(' + props.backgroundUrl + ')';
+    },
     backgroundSize: 'cover',
     minHeight: '75vh',
     display: 'flex',
@@ -54,11 +48,13 @@ var styles = {
 };
 
 var Teaser = function Teaser(_ref) {
-  var classes = _ref.classes;
+  var classes = _ref.classes,
+      backgroundUrl = _ref.backgroundUrl,
+      avatarUrl = _ref.avatarUrl;
   return _react2.default.createElement(
     'header',
     { className: classes.Teaser },
-    _react2.default.createElement('img', { className: classes.Avatar, src: _avatar2.default, alt: 'Avatar Ren\xE9 Viering' }),
+    _react2.default.createElement('img', { className: classes.Avatar, src: avatarUrl, alt: 'Avatar Ren\xE9 Viering' }),
     _react2.default.createElement(
       'h1',
       { className: classes.Headline },
