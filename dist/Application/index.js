@@ -16,29 +16,27 @@ var _NavBar = require('../NavBar');
 
 var _NavBar2 = _interopRequireDefault(_NavBar);
 
-var _theme = require('../../theme');
-
-var _theme2 = _interopRequireDefault(_theme);
-
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
-var styles = {
-  '@global': {
-    '@import': 'url(\'' + _theme2.default.font.import + '\')',
-    body: Object.assign({
-      backgroundColor: '#212121',
-      fontFamily: _theme2.default.font.family.default
-    }, _theme2.default.font.default),
-    h1: Object.assign({}, _theme2.default.font.bold),
-    h2: Object.assign({}, _theme2.default.font.bold),
-    h3: Object.assign({}, _theme2.default.font.bold)
-  },
-  mainContent: {
-    paddingTop: function paddingTop(props) {
-      return props.withTeaser ? 0 : '60px';
+var styles = function styles(theme) {
+  return {
+    '@global': {
+      '@import': 'url(\'' + theme.font.import + '\')',
+      body: Object.assign({
+        backgroundColor: '#212121',
+        fontFamily: theme.font.family.default
+      }, theme.font.default),
+      h1: Object.assign({}, theme.font.bold),
+      h2: Object.assign({}, theme.font.bold),
+      h3: Object.assign({}, theme.font.bold)
     },
-    backgroundColor: 'white'
-  }
+    mainContent: {
+      paddingTop: function paddingTop(props) {
+        return props.withTeaser ? 0 : '60px';
+      },
+      backgroundColor: 'white'
+    }
+  };
 };
 
 var Application = function Application(_ref) {
