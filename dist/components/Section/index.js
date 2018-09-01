@@ -14,9 +14,9 @@ var _reactJss2 = _interopRequireDefault(_reactJss);
 
 var _reactTransitionGroup = require('react-transition-group');
 
-var _Hexagon = require('./Hexagon');
+var _Hexagons = require('./Hexagons');
 
-var _Hexagon2 = _interopRequireDefault(_Hexagon);
+var _Hexagons2 = _interopRequireDefault(_Hexagons);
 
 var _reactIntersectionObserver = require('react-intersection-observer');
 
@@ -24,7 +24,6 @@ var _reactIntersectionObserver2 = _interopRequireDefault(_reactIntersectionObser
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
-// import hexagons from './hexagons.svg';
 var backgroundColorForType = {
   'primary': 'white',
   'secondary': '#ecf0f1'
@@ -79,6 +78,7 @@ var styles = {
     '@media(min-width: 1000px)': {
       top: '-12vw',
       right: 0,
+      width: '35vw',
       maxWidth: '35vw'
     }
 
@@ -122,7 +122,7 @@ var Section = function Section(_ref) {
               _react2.default.createElement(
                 'div',
                 { className: classes.Hexagons },
-                _react2.default.createElement(_Hexagon2.default, null)
+                _react2.default.createElement(_Hexagons2.default, null)
               )
             )
           )

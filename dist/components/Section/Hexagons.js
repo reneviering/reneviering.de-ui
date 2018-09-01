@@ -13,7 +13,7 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 var Hexagons = function Hexagons() {
     return _react2.default.createElement(
         "svg",
-        { width: "1301px", height: "1699px", viewBox: "0 0 1301 1699", version: "1.1", xmlns: "http://www.w3.org/2000/svg" },
+        { width: "100%", height: "100%", viewBox: "0 0 1301 1699", version: "1.1", xmlns: "http://www.w3.org/2000/svg" },
         _react2.default.createElement(
             "defs",
             null,

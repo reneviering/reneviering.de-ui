@@ -8,19 +8,17 @@ import Section from '../components/Section';
 import Footer from '../components/Footer';
 import Anchor from '../components/Anchor';
 import Button from '../components/Button';
+import ThemeProvider from '../components/ThemeProvider';
 
 import 'normalize.css/normalize.css';
-
-import { ThemeProvider } from 'react-jss';
-
-import theme from '../theme';
+import '../base-styling.css';
 
 import avatar from '../../static/avatar.jpg';
 import teaser from '../../static/teaser.jpg';
 
 storiesOf('Start Page', module)
   .add('default',  () => (
-    <ThemeProvider theme={ theme }>
+    <ThemeProvider>
       <Application withTeaser={true}>
         <AwesomeTeaser avatarUrl={avatar} backgroundUrl={ teaser } />
         <Section type="primary">
@@ -47,13 +45,12 @@ storiesOf('Start Page', module)
           </ul>
         </Section>
         <Section type="secondary" centered muchSpaceAround withBackgroundImage>
-            <h1 style={{ textAlign: 'center' }}>
-              You want me for your next project?
-              <br />
-              <br />
-              <Anchor href="mailto:hello@reneviering.com" target="_self"><Button>Hire me</Button></Anchor>
-            </h1>
-
+          <h1 style={{ textAlign: 'center' }}>
+            You want me for your next project?
+            <br />
+            <br />
+            <Anchor href="mailto:hello@reneviering.com" target="_self"><Button>Hire me</Button></Anchor>
+          </h1>
         </Section>
         <Footer />
       </Application>

@@ -32,13 +32,13 @@ var _Button = require('../components/Button');
 
 var _Button2 = _interopRequireDefault(_Button);
 
+var _ThemeProvider = require('../components/ThemeProvider');
+
+var _ThemeProvider2 = _interopRequireDefault(_ThemeProvider);
+
 require('normalize.css/normalize.css');
 
-var _reactJss = require('react-jss');
-
-var _theme = require('../theme');
-
-var _theme2 = _interopRequireDefault(_theme);
+require('../base-styling.css');
 
 var _avatar = require('../../static/avatar.jpg');
 
@@ -52,8 +52,8 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 
 (0, _react3.storiesOf)('Start Page', module).add('default', function () {
   return _react2.default.createElement(
-    _reactJss.ThemeProvider,
-    { theme: _theme2.default },
+    _ThemeProvider2.default,
+    null,
     _react2.default.createElement(
       _Application2.default,
       { withTeaser: true },
