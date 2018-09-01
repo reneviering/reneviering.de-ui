@@ -3,7 +3,8 @@ import injectSheet from 'react-jss';
 
 import { CSSTransition } from 'react-transition-group';
 
-import hexagons from './hexagons.svg';
+// import hexagons from './hexagons.svg';
+import Hexagons from './Hexagon';
 
 import Observer from 'react-intersection-observer';
 
@@ -79,7 +80,10 @@ const Section = ({ children, classes, type, withBackgroundImage=false }) => (
                 unmountOnExit
               >
                 <div className={ classes.ImageContainer }>
-                  <img className={ classes.Hexagons } src={ hexagons } />
+                  {/* <img className={ classes.Hexagons } src={ hexagons } /> */}
+                  <div className={ classes.Hexagons }>
+                    <Hexagons />
+                  </div>
                 </div>
               </CSSTransition>
 
