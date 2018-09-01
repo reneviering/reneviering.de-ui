@@ -28,7 +28,6 @@ const withScrollHandling = ComposedComponent => class extends React.Component {
   }
 
   render () {
-    console.log(this.state.opacity);
     return (
       <ComposedComponent
         { ...this.props }

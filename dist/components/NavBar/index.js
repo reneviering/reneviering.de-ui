@@ -76,7 +76,6 @@ var withScrollHandling = function withScrollHandling(ComposedComponent) {
     }, {
       key: 'render',
       value: function render() {
-        console.log(this.state.opacity);
         return _react2.default.createElement(ComposedComponent, _extends({}, this.props, {
           isTransparent: this.state.isTransparent,
           opacity: this.state.opacity,
