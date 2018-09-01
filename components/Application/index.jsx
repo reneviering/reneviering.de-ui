@@ -1,5 +1,4 @@
 import React from 'react';
-import 'intersection-observer';
 import injectSheet from 'react-jss';
 
 import NavBar from '../NavBar';
