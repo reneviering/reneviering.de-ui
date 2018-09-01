@@ -34,7 +34,7 @@ var Anchor = function Anchor(_ref) {
       type = _ref$type === undefined ? 'primary' : _ref$type;
   return _react2.default.createElement(
     'a',
-    { href: href, target: target, className: classes.Anchor, rel: 'norefferer' },
+    { href: href, target: target, className: classes.Anchor, rel: 'noopener' },
     children
   );
 };
