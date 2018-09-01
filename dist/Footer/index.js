@@ -12,9 +12,9 @@ var _reactJss = require('react-jss');
 
 var _reactJss2 = _interopRequireDefault(_reactJss);
 
-var _Link = require('../Link');
+var _Anchor = require('../Anchor');
 
-var _Link2 = _interopRequireDefault(_Link);
+var _Anchor2 = _interopRequireDefault(_Anchor);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -83,7 +83,7 @@ var Footer = function Footer(_ref) {
           null,
           'Mail: ',
           _react2.default.createElement(
-            _Link2.default,
+            _Anchor2.default,
             { href: 'mailto:hello@reneviering.com' },
             'hello@reneviering.com'
           ),
@@ -92,14 +92,14 @@ var Footer = function Footer(_ref) {
           _react2.default.createElement('br', null),
           'Twitter: ',
           _react2.default.createElement(
-            _Link2.default,
+            _Anchor2.default,
             { href: 'https://twitter.com/reneviering' },
             '@reneviering'
           ),
           _react2.default.createElement('br', null),
           'Github: ',
           _react2.default.createElement(
-            _Link2.default,
+            _Anchor2.default,
             { href: 'https://github.com/reneviering' },
             'reneviering'
           ),
@@ -118,7 +118,7 @@ var Footer = function Footer(_ref) {
           'li',
           null,
           _react2.default.createElement(
-            _Link2.default,
+            _Anchor2.default,
             { href: 'home' },
             'Home'
           )
@@ -127,7 +127,7 @@ var Footer = function Footer(_ref) {
           'li',
           null,
           _react2.default.createElement(
-            _Link2.default,
+            _Anchor2.default,
             { href: 'tech:lounge' },
             'tech:lounge'
           )
@@ -136,7 +136,7 @@ var Footer = function Footer(_ref) {
           'li',
           null,
           _react2.default.createElement(
-            _Link2.default,
+            _Anchor2.default,
             { href: 'talks' },
             'Talks'
           )
@@ -145,7 +145,7 @@ var Footer = function Footer(_ref) {
           'li',
           null,
           _react2.default.createElement(
-            _Link2.default,
+            _Anchor2.default,
             { href: 'blog' },
             'Blog'
           )

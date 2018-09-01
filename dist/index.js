@@ -3,7 +3,7 @@
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-exports.Footer = exports.Button = exports.Link = exports.Teaser = exports.Section = exports.NavBar = exports.Application = undefined;
+exports.Footer = exports.Button = exports.Anchor = exports.AwesomeTeaser = exports.Section = exports.NavBar = exports.Application = undefined;
 
 var _Application = require('./Application');
 
@@ -17,13 +17,13 @@ var _Section = require('./Section');
 
 var _Section2 = _interopRequireDefault(_Section);
 
-var _Teaser = require('./Teaser');
+var _AwesomeTeaser = require('./AwesomeTeaser');
 
-var _Teaser2 = _interopRequireDefault(_Teaser);
+var _AwesomeTeaser2 = _interopRequireDefault(_AwesomeTeaser);
 
-var _Link = require('./Link');
+var _Anchor = require('./Anchor');
 
-var _Link2 = _interopRequireDefault(_Link);
+var _Anchor2 = _interopRequireDefault(_Anchor);
 
 var _Button = require('./Button');
 
@@ -38,7 +38,7 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 exports.Application = _Application2.default;
 exports.NavBar = _NavBar2.default;
 exports.Section = _Section2.default;
-exports.Teaser = _Teaser2.default;
-exports.Link = _Link2.default;
+exports.AwesomeTeaser = _AwesomeTeaser2.default;
+exports.Anchor = _Anchor2.default;
 exports.Button = _Button2.default;
 exports.Footer = _Footer2.default;

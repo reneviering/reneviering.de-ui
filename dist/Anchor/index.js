@@ -16,7 +16,7 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 
 var styles = function styles(theme) {
   return {
-    Link: {
+    Anchor: {
       textDecoration: 'none',
       color: '#3498db',
       fontWeight: 400
@@ -24,7 +24,7 @@ var styles = function styles(theme) {
   };
 };
 
-var Link = function Link(_ref) {
+var Anchor = function Anchor(_ref) {
   var href = _ref.href,
       _ref$target = _ref.target,
       target = _ref$target === undefined ? '_blank' : _ref$target,
@@ -34,9 +34,9 @@ var Link = function Link(_ref) {
       type = _ref$type === undefined ? 'primary' : _ref$type;
   return _react2.default.createElement(
     'a',
-    { href: href, target: target, className: classes.Link },
+    { href: href, target: target, className: classes.Anchor },
     children
   );
 };
 
-exports.default = (0, _reactJss2.default)(styles)(Link);
+exports.default = (0, _reactJss2.default)(styles)(Anchor);

@@ -3,10 +3,10 @@ import { storiesOf } from '@storybook/react';
 import { action } from '@storybook/addon-actions';
 
 import Application from '../components/Application';
-import Teaser from '../components/Teaser';
+import AwesomeTeaser from '../components/AwesomeTeaser';
 import Section from '../components/Section';
 import Footer from '../components/Footer';
-import Link from '../components/Link';
+import Anchor from '../components/Anchor';
 import Button from '../components/Button';
 
 import 'normalize.css/normalize.css';
@@ -22,7 +22,7 @@ storiesOf('Start Page', module)
   .add('default',  () => (
     <ThemeProvider theme={ theme }>
       <Application withTeaser={true}>
-        <Teaser avatarUrl={avatar} backgroundUrl={ teaser } />
+        <AwesomeTeaser avatarUrl={avatar} backgroundUrl={ teaser } />
         <Section type="primary">
           <h1>Hi, I'm René!</h1>
           <p>A freelance JavaScript developer with a passion for frontend technologies, especially single page apps. I prefer lean, targeted libraries and lightweight architectures that result in clean, testable code. That's why I value React and its functional programming principles a lot.</p>
@@ -40,10 +40,10 @@ storiesOf('Start Page', module)
             <li>DDD (Kassel Code Meetup)</li>
             <li>DDD (WebMontag Kassel)</li>
             <li>Single Page Apps - A Framework Agnostic Approach (EnterJS 06/2017)</li>
-            <li>React Native (WebMontag Kassel) <Link href="http://slides.com/revrng/react-native#/">Slides</Link></li>
-            <li>Tec Talk: Single Page Apps - A Framework Agnostic Approach (Micromata 06/2016) <Link href="http://slides.com/revrng/deck#/">Slides</Link> <Link href="https://www.youtube.com/watch?v=XdA0ZngKu1o">Video</Link></li>
-            <li>Introduction to Flux - (WebMontag Kassel 09/2015) <Link href="https://codemade.js.org/wmks-flux">Slides</Link></li>
-            <li>Introduction to React - (WebMontag Kassel 09/2015) <Link href="https://codemade.js.org/wmks-react">Slides</Link></li>
+            <li>React Native (WebMontag Kassel) <Anchor href="http://slides.com/revrng/react-native#/">Slides</Anchor></li>
+            <li>Tec Talk: Single Page Apps - A Framework Agnostic Approach (Micromata 06/2016) <Anchor href="http://slides.com/revrng/deck#/">Slides</Anchor> <Anchor href="https://www.youtube.com/watch?v=XdA0ZngKu1o">Video</Anchor></li>
+            <li>Introduction to Flux - (WebMontag Kassel 09/2015) <Anchor href="https://codemade.js.org/wmks-flux">Slides</Anchor></li>
+            <li>Introduction to React - (WebMontag Kassel 09/2015) <Anchor href="https://codemade.js.org/wmks-react">Slides</Anchor></li>
           </ul>
         </Section>
         <Section type="secondary" centered muchSpaceAround withBackgroundImage>
@@ -51,7 +51,7 @@ storiesOf('Start Page', module)
               You want me for your next project?
               <br />
               <br />
-              <Link href="mailto:hello@reneviering.com" target="_self"><Button>Hire me</Button></Link>
+              <Anchor href="mailto:hello@reneviering.com" target="_self"><Button>Hire me</Button></Anchor>
             </h1>
 
         </Section>

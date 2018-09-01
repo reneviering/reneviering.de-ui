@@ -1,7 +1,7 @@
 import React from 'react';
 import injectSheet from 'react-jss';
 
-import Link from '../Link';
+import Anchor from '../Anchor';
 
 const styles = {
   Footer: {
@@ -48,20 +48,20 @@ const Footer = ({ classes }) => (
           D-34132 Kassel<br />
         </address>
         <p>
-          Mail: <Link href="mailto:hello@reneviering.com">hello@reneviering.com</Link><br/>
+          Mail: <Anchor href="mailto:hello@reneviering.com">hello@reneviering.com</Anchor><br/>
           Phone: +49 152 21044200<br/>
-          Twitter: <Link href="https://twitter.com/reneviering">@reneviering</Link><br/>
-          Github: <Link href="https://github.com/reneviering">reneviering</Link><br/>
+          Twitter: <Anchor href="https://twitter.com/reneviering">@reneviering</Anchor><br/>
+          Github: <Anchor href="https://github.com/reneviering">reneviering</Anchor><br/>
         </p>
         <p>
           UST-ID: 1234567890
         </p>
       </div>
       <ul className={ classes.Sitemap }>
-        <li><Link href="home">Home</Link></li>
-        <li><Link href="tech:lounge">tech:lounge</Link></li>
-        <li><Link href="talks">Talks</Link></li>
-        <li><Link href="blog">Blog</Link></li>
+        <li><Anchor href="home">Home</Anchor></li>
+        <li><Anchor href="tech:lounge">tech:lounge</Anchor></li>
+        <li><Anchor href="talks">Talks</Anchor></li>
+        <li><Anchor href="blog">Blog</Anchor></li>
       </ul>
     </div>
   </footer>

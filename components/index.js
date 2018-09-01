@@ -1,8 +1,8 @@
 import Application from './Application';
 import NavBar from './NavBar';
 import Section from './Section';
-import Teaser from './Teaser';
-import Link from './Link';
+import AwesomeTeaser from './AwesomeTeaser';
+import Anchor from './Anchor';
 import Button from './Button';
 import Footer from './Footer';
 
@@ -10,8 +10,8 @@ export {
   Application,
   NavBar,
   Section,
-  Teaser,
-  Link,
+  AwesomeTeaser,
+  Anchor,
   Button,
   Footer
 };
