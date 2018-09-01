@@ -2,7 +2,7 @@ import 'intersection-observer';
 import { configure } from '@storybook/react';
 
 function loadStories() {
-  require('../stories/index.js');
+  require('../src/stories/index.js');
 }
 
 configure(loadStories, module);

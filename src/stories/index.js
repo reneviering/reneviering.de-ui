@@ -15,8 +15,8 @@ import { ThemeProvider } from 'react-jss';
 
 import theme from '../theme';
 
-import avatar from '../static/avatar.jpg';
-import teaser from '../static/teaser.jpg';
+import avatar from '../../static/avatar.jpg';
+import teaser from '../../static/teaser.jpg';
 
 storiesOf('Start Page', module)
   .add('default',  () => (

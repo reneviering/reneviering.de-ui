@@ -7,7 +7,7 @@
     "storybook": "start-storybook -p 9001 -c .storybook",
     "build-storybook": "build-storybook",
     "clean-dist": "rm -rf ./dist",
-    "babelify-them": "npm run clean-dist && NODE_ENV=production && babel components --out-dir dist --copy-files",
+    "babelify-them": "npm run clean-dist && NODE_ENV=production && babel src --out-dir dist --copy-files",
     "build": "npm run build-storybook && npm run babelify-them"
   },
   "repository": {
