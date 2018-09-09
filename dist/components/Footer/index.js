@@ -128,15 +128,6 @@ var Footer = function Footer(_ref) {
           null,
           _react2.default.createElement(
             _Anchor2.default,
-            { href: 'tech:lounge' },
-            'tech:lounge'
-          )
-        ),
-        _react2.default.createElement(
-          'li',
-          null,
-          _react2.default.createElement(
-            _Anchor2.default,
             { href: 'talks' },
             'Talks'
           )

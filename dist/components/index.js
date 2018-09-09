@@ -9,6 +9,10 @@ var _Application = require('./Application');
 
 var _Application2 = _interopRequireDefault(_Application);
 
+var _ScrollableNavBar = require('./ScrollableNavBar');
+
+var _ScrollableNavBar2 = _interopRequireDefault(_ScrollableNavBar);
+
 var _NavBar = require('./NavBar');
 
 var _NavBar2 = _interopRequireDefault(_NavBar);

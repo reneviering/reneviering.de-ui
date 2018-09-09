@@ -1,4 +1,5 @@
 import Application from './Application';
+import ScrollableNavBar from './ScrollableNavBar';
 import NavBar from './NavBar';
 import Section from './Section';
 import AwesomeTeaser from './AwesomeTeaser';

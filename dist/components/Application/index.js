@@ -12,31 +12,14 @@ var _reactJss = require('react-jss');
 
 var _reactJss2 = _interopRequireDefault(_reactJss);
 
-var _NavBar = require('../NavBar');
+var _ScrollableNavBar = require('../ScrollableNavBar');
 
-var _NavBar2 = _interopRequireDefault(_NavBar);
+var _ScrollableNavBar2 = _interopRequireDefault(_ScrollableNavBar);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 var styles = function styles(theme) {
   return {
-    // '@global': {
-    //   '@import': `url('${theme.font.import}')`,
-    //   body: {
-    //     backgroundColor: '#212121',
-    //     fontFamily: theme.font.family.default,
-    //     ...theme.font.default
-    //   },
-    //   h1: {
-    //     ...theme.font.bold
-    //   },
-    //   h2: {
-    //     ...theme.font.bold
-    //   },
-    //   h3:{
-    //     ...theme.font.bold
-    //   }
-    // },
     mainContent: {
       paddingTop: function paddingTop(props) {
         return props.withTeaser ? 0 : '60px';
@@ -54,7 +37,7 @@ var Application = function Application(_ref) {
   return _react2.default.createElement(
     _react2.default.Fragment,
     null,
-    _react2.default.createElement(_NavBar2.default, null),
+    _react2.default.createElement(_ScrollableNavBar2.default, null),
     _react2.default.createElement(
       'main',
       { className: classes.mainContent },

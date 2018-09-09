@@ -59,7 +59,6 @@ const Footer = ({ classes }) => (
       </div>
       <ul className={ classes.Sitemap }>
         <li><Anchor href="home">Home</Anchor></li>
-        <li><Anchor href="tech:lounge">tech:lounge</Anchor></li>
         <li><Anchor href="talks">Talks</Anchor></li>
         <li><Anchor href="blog">Blog</Anchor></li>
       </ul>
