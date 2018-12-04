@@ -9,8 +9,10 @@ const styles = theme => ({
   }
 });
 
-const Anchor = ({ href, target='_blank', children, classes, type='primary'}) => (
-  <a href={ href } target={ target } className={ classes.Anchor } rel="noopener">{ children }</a>
+const Anchor = ({ href, target = '', children, classes, type = 'primary' }) => (
+  <a href={href} target={target} className={classes.Anchor} rel="noopener">
+    {children}
+  </a>
 );
 
 export default injectSheet(styles)(Anchor);

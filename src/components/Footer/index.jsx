@@ -36,31 +36,45 @@ const styles = {
 };
 
 const Footer = ({ classes }) => (
-  <footer className={ classes.Footer }>
-    <div className={ classes.Content }>
-      <p className={ classes.Copyright }>
-        ©{ new Date().getFullYear() } René Viering
+  <footer className={classes.Footer}>
+    <div className={classes.Content}>
+      <p className={classes.Copyright}>
+        ©{new Date().getFullYear()} René Viering
       </p>
-      <div className={ classes.Contact }>
-        <address className={ classes.Address }>
+      <div className={classes.Contact}>
+        <address className={classes.Address}>
           René Viering <br />
-          Wegelänge 74 <br />
-          D-34132 Kassel<br />
+          Helgoländer Str. 11 <br />
+          D-34123 Kassel
+          <br />
         </address>
         <p>
-          Mail: <Anchor href="mailto:hello@reneviering.com">hello@reneviering.com</Anchor><br/>
-          Phone: +49 152 21044200<br/>
-          Twitter: <Anchor href="https://twitter.com/reneviering">@reneviering</Anchor><br/>
-          Github: <Anchor href="https://github.com/reneviering">reneviering</Anchor><br/>
+          Mail:{' '}
+          <Anchor href="mailto:hello@reneviering.com">
+            hello@reneviering.com
+          </Anchor>
+          <br />
+          Phone: +49 152 21044200
+          <br />
+          Twitter:{' '}
+          <Anchor href="https://twitter.com/reneviering">@reneviering</Anchor>
+          <br />
+          Github:{' '}
+          <Anchor href="https://github.com/reneviering">reneviering</Anchor>
+          <br />
         </p>
-        <p>
-          UST-ID: 1234567890
-        </p>
+        <p>UST-ID: 1234567890</p>
       </div>
-      <ul className={ classes.Sitemap }>
-        <li><Anchor href="home">Home</Anchor></li>
-        <li><Anchor href="talks">Talks</Anchor></li>
-        <li><Anchor href="blog">Blog</Anchor></li>
+      <ul className={classes.Sitemap}>
+        <li>
+          <Anchor href="home">Home</Anchor>
+        </li>
+        <li>
+          <Anchor href="talks">Talks</Anchor>
+        </li>
+        <li>
+          <Anchor href="blog">Blog</Anchor>
+        </li>
       </ul>
     </div>
   </footer>
