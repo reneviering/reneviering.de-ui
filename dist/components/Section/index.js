@@ -25,8 +25,8 @@ var _reactIntersectionObserver2 = _interopRequireDefault(_reactIntersectionObser
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 var backgroundColorForType = {
-  'primary': 'white',
-  'secondary': '#ecf0f1'
+  primary: 'white',
+  secondary: '#ecf0f1'
 };
 
 var styles = {
@@ -81,7 +81,6 @@ var styles = {
       width: '35vw',
       maxWidth: '35vw'
     }
-
   }
 };
 
@@ -90,7 +89,8 @@ var Section = function Section(_ref) {
       classes = _ref.classes,
       type = _ref.type,
       _ref$withBackgroundIm = _ref.withBackgroundImage,
-      withBackgroundImage = _ref$withBackgroundIm === undefined ? false : _ref$withBackgroundIm;
+      withBackgroundImage = _ref$withBackgroundIm === undefined ? false : _ref$withBackgroundIm,
+      id = _ref.id;
   return _react2.default.createElement(
     _reactIntersectionObserver2.default,
     null,
@@ -99,7 +99,7 @@ var Section = function Section(_ref) {
           ref = _ref2.ref;
       return _react2.default.createElement(
         'section',
-        { className: classes.Section, ref: ref },
+        { className: classes.Section, ref: ref, id: id },
         _react2.default.createElement(
           'div',
           { className: classes.ContentContainer },

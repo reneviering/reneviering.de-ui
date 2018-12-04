@@ -8,9 +8,9 @@ import Hexagons from './Hexagons';
 import Observer from 'react-intersection-observer';
 
 const backgroundColorForType = {
-  'primary': 'white',
-  'secondary': '#ecf0f1'
-}
+  primary: 'white',
+  secondary: '#ecf0f1'
+};
 
 const styles = {
   '@keyframes fade-in': {
@@ -22,14 +22,14 @@ const styles = {
     }
   },
   Section: {
-    backgroundColor: props => backgroundColorForType[props.type] || 'white',
+    backgroundColor: props => backgroundColorForType[props.type] || 'white',
     padding: props => '120px 40px',
     position: 'relative'
   },
   ContentContainer: {
     margin: '0 auto',
     maxWidth: 960,
-    textAlign: props => props.centered ? 'center': 'left',
+    textAlign: props => (props.centered ? 'center' : 'left'),
     zIndex: 101,
     display: 'flex'
   },
@@ -56,42 +56,40 @@ const styles = {
       top: '-12vw',
       right: 0,
       width: '35vw',
-      maxWidth: '35vw',
-    },
-
+      maxWidth: '35vw'
+    }
   }
 };
 
-const Section = ({ children, classes, type, withBackgroundImage=false }) => (
+const Section = ({
+  children,
+  classes,
+  type,
+  withBackgroundImage = false,
+  id
+}) => (
   <Observer>
-    {
-      ({ inView, ref }) => (
-        <section className={ classes.Section } ref={ ref }>
-          <div className={ classes.ContentContainer }>
+    {({ inView, ref }) => (
+      <section className={classes.Section} ref={ref} id={id}>
+        <div className={classes.ContentContainer}>
+          <div className={classes.Content}>{children}</div>
 
-            <div className={ classes.Content }>
-              { children }
+          <CSSTransition
+            in={withBackgroundImage && inView}
+            timeout={3000}
+            classNames="hexagon-image"
+            unmountOnExit
+          >
+            <div className={classes.ImageContainer}>
+              <div className={classes.Hexagons}>
+                <Hexagons />
+              </div>
             </div>
-
-              <CSSTransition
-                in={ withBackgroundImage && inView }
-                timeout={3000}
-                classNames="hexagon-image"
-                unmountOnExit
-              >
-                <div className={ classes.ImageContainer }>
-                  <div className={ classes.Hexagons }>
-                    <Hexagons />
-                  </div>
-                </div>
-              </CSSTransition>
-
-          </div>
-        </section>
-      )
-    }
-
+          </CSSTransition>
+        </div>
+      </section>
+    )}
   </Observer>
-)
+);
 
 export default injectSheet(styles)(Section);
