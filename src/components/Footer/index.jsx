@@ -63,7 +63,7 @@ const Footer = ({ classes }) => (
           <Anchor href="https://github.com/reneviering">reneviering</Anchor>
           <br />
         </p>
-        <p>UST-ID: 1234567890</p>
+        <p>VAT ID: DE815780857</p>
       </div>
       <ul className={classes.Sitemap}>
         <li>
@@ -74,6 +74,12 @@ const Footer = ({ classes }) => (
         </li>
         <li>
           <Anchor href="blog">Blog</Anchor>
+        </li>
+        <li>
+          <Anchor href="imprint">Imprint</Anchor>
+        </li>
+        <li>
+          <Anchor href="privacy">Privacy Policy</Anchor>
         </li>
       </ul>
     </div>

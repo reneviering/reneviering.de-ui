@@ -111,7 +111,7 @@ var Footer = function Footer(_ref) {
         _react2.default.createElement(
           'p',
           null,
-          'UST-ID: 1234567890'
+          'VAT ID: DE815780857'
         )
       ),
       _react2.default.createElement(
@@ -142,6 +142,24 @@ var Footer = function Footer(_ref) {
             _Anchor2.default,
             { href: 'blog' },
             'Blog'
+          )
+        ),
+        _react2.default.createElement(
+          'li',
+          null,
+          _react2.default.createElement(
+            _Anchor2.default,
+            { href: 'imprint' },
+            'Imprint'
+          )
+        ),
+        _react2.default.createElement(
+          'li',
+          null,
+          _react2.default.createElement(
+            _Anchor2.default,
+            { href: 'privacy' },
+            'Privacy Policy'
           )
         )
       )
