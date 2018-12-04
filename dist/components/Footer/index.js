@@ -73,15 +73,16 @@ var Footer = function Footer(_ref) {
           { className: classes.Address },
           'Ren\xE9 Viering ',
           _react2.default.createElement('br', null),
-          'Wegel\xE4nge 74 ',
+          'Helgol\xE4nder Str. 11 ',
           _react2.default.createElement('br', null),
-          'D-34132 Kassel',
+          'D-34123 Kassel',
           _react2.default.createElement('br', null)
         ),
         _react2.default.createElement(
           'p',
           null,
-          'Mail: ',
+          'Mail:',
+          ' ',
           _react2.default.createElement(
             _Anchor2.default,
             { href: 'mailto:hello@reneviering.com' },
@@ -90,14 +91,16 @@ var Footer = function Footer(_ref) {
           _react2.default.createElement('br', null),
           'Phone: +49 152 21044200',
           _react2.default.createElement('br', null),
-          'Twitter: ',
+          'Twitter:',
+          ' ',
           _react2.default.createElement(
             _Anchor2.default,
             { href: 'https://twitter.com/reneviering' },
             '@reneviering'
           ),
           _react2.default.createElement('br', null),
-          'Github: ',
+          'Github:',
+          ' ',
           _react2.default.createElement(
             _Anchor2.default,
             { href: 'https://github.com/reneviering' },

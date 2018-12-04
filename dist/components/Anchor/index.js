@@ -27,7 +27,7 @@ var styles = function styles(theme) {
 var Anchor = function Anchor(_ref) {
   var href = _ref.href,
       _ref$target = _ref.target,
-      target = _ref$target === undefined ? '_blank' : _ref$target,
+      target = _ref$target === undefined ? '' : _ref$target,
       children = _ref.children,
       classes = _ref.classes,
       _ref$type = _ref.type,
