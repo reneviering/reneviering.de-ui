@@ -67,7 +67,7 @@ const Footer = ({ classes }) => (
       </div>
       <ul className={classes.Sitemap}>
         <li>
-          <Anchor href="/home">Home</Anchor>
+          <Anchor href="/">Home</Anchor>
         </li>
         <li>
           <Anchor href="/#talks">Talks</Anchor>
