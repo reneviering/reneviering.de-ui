@@ -26,7 +26,10 @@ var styles = {
     alignItems: 'center',
     flexDirection: 'column',
     color: 'white',
-    paddingTop: 80
+    paddingTop: 80,
+    '@media(min-width: 700px)': {
+      minHeight: '75vh'
+    }
   },
   Headline: {
     marginBottom: 0
