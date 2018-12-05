@@ -5,7 +5,7 @@ const styles = {
   Teaser: {
     backgroundImage: props => `url(${props.backgroundUrl})`,
     backgroundSize: 'cover',
-    minHeight: '75vh',
+    minHeight: '60vh',
     display: 'flex',
     justifyContent: 'center',
     alignItems: 'center',
@@ -27,17 +27,18 @@ const styles = {
     borderRadius: '50%',
     '@media(min-width: 700px)': {
       maxWidth: '250px',
-      maxHeight: '250px',
+      maxHeight: '250px'
     }
   }
-}
+};
 
 const Teaser = ({ classes, backgroundUrl, avatarUrl }) => (
-  <header className={ classes.Teaser }>
-    <img className={ classes.Avatar } src={ avatarUrl } alt="Avatar René Viering" />
-    <h1 className={ classes.Headline }>René Viering</h1>
-    <p className={ classes.PersonInfo }>
-      JavaScript Freelancer<br />
+  <header className={classes.Teaser}>
+    <img className={classes.Avatar} src={avatarUrl} alt="Avatar René Viering" />
+    <h1 className={classes.Headline}>René Viering</h1>
+    <p className={classes.PersonInfo}>
+      JavaScript Freelancer
+      <br />
       <small>Kassel, Germany</small>
     </p>
   </header>

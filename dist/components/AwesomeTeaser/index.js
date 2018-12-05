@@ -20,7 +20,7 @@ var styles = {
       return 'url(' + props.backgroundUrl + ')';
     },
     backgroundSize: 'cover',
-    minHeight: '75vh',
+    minHeight: '60vh',
     display: 'flex',
     justifyContent: 'center',
     alignItems: 'center',
