@@ -43,7 +43,7 @@ var styles = {
       return backgroundColorForType[props.type] || 'white';
     },
     padding: function padding(props) {
-      return '120px 40px';
+      return '80px 40px';
     },
     position: 'relative'
   },

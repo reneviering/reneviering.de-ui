@@ -23,7 +23,7 @@ const styles = {
   },
   Section: {
     backgroundColor: props => backgroundColorForType[props.type] || 'white',
-    padding: props => '120px 40px',
+    padding: props => '80px 40px',
     position: 'relative'
   },
   ContentContainer: {
