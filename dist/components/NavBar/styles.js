@@ -11,6 +11,7 @@ var styles = function styles(theme) {
     NavBar: {
       position: 'fixed',
       width: '100%',
+      top: 0,
       zIndex: 10,
       backgroundColor: 'white',
       boxShadow: 'rgba(0, 0, 0, 0.2) 0px 2px 5px 0px'
