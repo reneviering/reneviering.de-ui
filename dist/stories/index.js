@@ -28,6 +28,10 @@ var _Anchor = require('../components/Anchor');
 
 var _Anchor2 = _interopRequireDefault(_Anchor);
 
+var _ScrollableNavBar = require('../components/ScrollableNavBar');
+
+var _ScrollableNavBar2 = _interopRequireDefault(_ScrollableNavBar);
+
 var _Button = require('../components/Button');
 
 var _Button2 = _interopRequireDefault(_Button);
@@ -57,6 +61,7 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
     _react2.default.createElement(
       _Application2.default,
       { withTeaser: true },
+      _react2.default.createElement(_ScrollableNavBar2.default, null),
       _react2.default.createElement(_AwesomeTeaser2.default, { avatarUrl: _avatar2.default, backgroundUrl: _teaser2.default }),
       _react2.default.createElement(
         _Section2.default,

@@ -1,9 +1,6 @@
 import React from 'react';
 import injectSheet from 'react-jss';
 
-import ScrollableNavBar from '../ScrollableNavBar';
-import NavBar from '../NavBar';
-
 const styles = theme => ({
   mainContent: {
     paddingTop: props => props.withTeaser ? 0 : '60px',
@@ -11,9 +8,8 @@ const styles = theme => ({
   }
 });
 
-const Application = ({ children, classes, withTeaser=false, withScrollableNavBar=true }) => (
+const Application = ({ children, classes, withTeaser=false}) => (
   <React.Fragment>
-    { withScrollableNavBar ? <ScrollableNavBar /> : <NavBar /> }
     <main className={ classes.mainContent }>
       { children }
     </main>

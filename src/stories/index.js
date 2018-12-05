@@ -7,6 +7,7 @@ import AwesomeTeaser from '../components/AwesomeTeaser';
 import Section from '../components/Section';
 import Footer from '../components/Footer';
 import Anchor from '../components/Anchor';
+import ScrollableNavBar from '../components/ScrollableNavBar';
 import Button from '../components/Button';
 import ThemeProvider from '../components/ThemeProvider';
 
@@ -20,6 +21,7 @@ storiesOf('Start Page', module)
   .add('default',  () => (
     <ThemeProvider>
       <Application withTeaser={true}>
+        <ScrollableNavBar />
         <AwesomeTeaser avatarUrl={avatar} backgroundUrl={ teaser } />
         <Section type="primary">
           <h1>Hi, I'm René!</h1>
