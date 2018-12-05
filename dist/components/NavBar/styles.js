@@ -32,11 +32,7 @@ var styles = function styles(theme) {
     NavBar__Item: {
       marginRight: 15,
       fontFamily: theme.font.family.default,
-      lineHeight: '20px',
-      display: 'none',
-      '@media(min-width: 600px)': {
-        display: 'block'
-      }
+      lineHeight: '20px'
     },
     NavBar__Link: {
       textDecoration: 'none',

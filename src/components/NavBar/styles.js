@@ -25,10 +25,6 @@ const styles = theme => ({
     marginRight: 15,
     fontFamily: theme.font.family.default,
     lineHeight: '20px',
-    display: 'none',
-    '@media(min-width: 600px)': {
-      display: 'block'
-    }
   },
   NavBar__Link: {
     textDecoration: 'none',
