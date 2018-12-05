@@ -63,6 +63,7 @@ var withScrollHandling = function withScrollHandling(ComposedComponent) {
       key: 'componentDidMount',
       value: function componentDidMount() {
         window.addEventListener('scroll', this.handleScroll);
+        this.handleScroll();
       }
     }, {
       key: 'componentWillUnmount',
