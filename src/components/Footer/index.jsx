@@ -70,7 +70,7 @@ const Footer = ({ classes }) => (
           <Anchor href="/home">Home</Anchor>
         </li>
         <li>
-          <Anchor href="/talks">Talks</Anchor>
+          <Anchor href="/#talks">Talks</Anchor>
         </li>
         <li>
           <Anchor href="/blog">Blog</Anchor>

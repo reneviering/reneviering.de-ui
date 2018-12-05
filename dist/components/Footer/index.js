@@ -131,7 +131,7 @@ var Footer = function Footer(_ref) {
           null,
           _react2.default.createElement(
             _Anchor2.default,
-            { href: '/talks' },
+            { href: '/#talks' },
             'Talks'
           )
         ),
