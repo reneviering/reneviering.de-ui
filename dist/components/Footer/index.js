@@ -122,7 +122,7 @@ var Footer = function Footer(_ref) {
           null,
           _react2.default.createElement(
             _Anchor2.default,
-            { href: 'home' },
+            { href: '/home' },
             'Home'
           )
         ),
@@ -131,7 +131,7 @@ var Footer = function Footer(_ref) {
           null,
           _react2.default.createElement(
             _Anchor2.default,
-            { href: 'talks' },
+            { href: '/talks' },
             'Talks'
           )
         ),
@@ -140,7 +140,7 @@ var Footer = function Footer(_ref) {
           null,
           _react2.default.createElement(
             _Anchor2.default,
-            { href: 'blog' },
+            { href: '/blog' },
             'Blog'
           )
         ),
@@ -149,7 +149,7 @@ var Footer = function Footer(_ref) {
           null,
           _react2.default.createElement(
             _Anchor2.default,
-            { href: 'imprint' },
+            { href: '/imprint' },
             'Imprint'
           )
         ),
@@ -158,7 +158,7 @@ var Footer = function Footer(_ref) {
           null,
           _react2.default.createElement(
             _Anchor2.default,
-            { href: 'privacy' },
+            { href: '/privacy' },
             'Privacy Policy'
           )
         )
