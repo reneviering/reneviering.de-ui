@@ -26,7 +26,7 @@ class NavBar extends React.PureComponent {
             </a>
           </li>
           <li className={ classes.NavBar__Item }>
-            <a className={ classes.NavBar__Link } href='#talks' style={colorStyles}>Talks</a>
+            <a className={ classes.NavBar__Link } href='/#talks' style={colorStyles}>Talks</a>
           </li>
           <li className={ classes.NavBar__Item }>
             <a className={ classes.NavBar__Link } href='/blog' style={colorStyles}>Blog</a>

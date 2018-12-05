@@ -76,7 +76,7 @@ var NavBar = function (_React$PureComponent) {
             { className: classes.NavBar__Item },
             _react2.default.createElement(
               'a',
-              { className: classes.NavBar__Link, href: '#talks', style: colorStyles },
+              { className: classes.NavBar__Link, href: '/#talks', style: colorStyles },
               'Talks'
             )
           ),
