@@ -2,6 +2,7 @@ import React from 'react';
 import injectSheet from 'react-jss';
 
 import ScrollableNavBar from '../ScrollableNavBar';
+import NavBar from '../NavBar';
 
 const styles = theme => ({
   mainContent: {
@@ -10,9 +11,9 @@ const styles = theme => ({
   }
 });
 
-const Application = ({ children, classes, withTeaser=false }) => (
+const Application = ({ children, classes, withTeaser=false, withScrollableNavBar=true }) => (
   <React.Fragment>
-    <ScrollableNavBar />
+    { withScrollableNavBar ? <ScrollableNavBar /> : <NavBar /> }
     <main className={ classes.mainContent }>
       { children }
     </main>
