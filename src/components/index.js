@@ -11,6 +11,7 @@ import ThemeProvider from './ThemeProvider';
 export {
   Application,
   NavBar,
+  ScrollableNavBar,
   Section,
   AwesomeTeaser,
   Anchor,

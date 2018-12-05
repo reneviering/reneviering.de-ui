@@ -3,7 +3,7 @@
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-exports.ThemeProvider = exports.Footer = exports.Button = exports.Anchor = exports.AwesomeTeaser = exports.Section = exports.NavBar = exports.Application = undefined;
+exports.ThemeProvider = exports.Footer = exports.Button = exports.Anchor = exports.AwesomeTeaser = exports.Section = exports.ScrollableNavBar = exports.NavBar = exports.Application = undefined;
 
 var _Application = require('./Application');
 
@@ -45,6 +45,7 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 
 exports.Application = _Application2.default;
 exports.NavBar = _NavBar2.default;
+exports.ScrollableNavBar = _ScrollableNavBar2.default;
 exports.Section = _Section2.default;
 exports.AwesomeTeaser = _AwesomeTeaser2.default;
 exports.Anchor = _Anchor2.default;
