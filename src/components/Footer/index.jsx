@@ -7,7 +7,7 @@ const styles = {
   Footer: {
     backgroundColor: '#2d3436',
     padding: 20,
-    color: 'white'
+    color: 'white',
   },
   Content: {
     margin: '0 auto',
@@ -15,24 +15,24 @@ const styles = {
     display: 'flex',
     flexDirection: 'column',
     '@media(min-width: 500px)': {
-      flexDirection: 'row'
-    }
+      flexDirection: 'row',
+    },
   },
   Copyright: {
-    flex: 1
+    flex: 1,
   },
   Contact: {
     flex: 1,
-    marginTop: 20
+    marginTop: 20,
   },
   Sitemap: {
     flex: 1,
     padding: 0,
-    listStyleType: 'none'
+    listStyleType: 'none',
   },
   Address: {
-    fontStyle: 'normal'
-  }
+    fontStyle: 'normal',
+  },
 };
 
 const Footer = ({ classes }) => (
@@ -44,8 +44,8 @@ const Footer = ({ classes }) => (
       <div className={classes.Contact}>
         <address className={classes.Address}>
           René Viering <br />
-          Helgoländer Str. 11 <br />
-          D-34123 Kassel
+          Halskestr. 5 <br />
+          D-12167 Berlin
           <br />
         </address>
         <p>

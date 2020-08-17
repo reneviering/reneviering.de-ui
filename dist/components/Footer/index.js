@@ -73,9 +73,9 @@ var Footer = function Footer(_ref) {
           { className: classes.Address },
           'Ren\xE9 Viering ',
           _react2.default.createElement('br', null),
-          'Helgol\xE4nder Str. 11 ',
+          'Halskestr. 5 ',
           _react2.default.createElement('br', null),
-          'D-34123 Kassel',
+          'D-12167 Berlin',
           _react2.default.createElement('br', null)
         ),
         _react2.default.createElement(
