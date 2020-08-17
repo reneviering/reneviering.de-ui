@@ -71,7 +71,7 @@ var Teaser = function Teaser(_ref) {
       _react2.default.createElement(
         'small',
         null,
-        'Kassel, Germany'
+        'Berlin, Germany'
       )
     )
   );

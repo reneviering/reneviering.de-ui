@@ -3,7 +3,7 @@ import injectSheet from 'react-jss';
 
 const styles = {
   Teaser: {
-    backgroundImage: props => `url(${props.backgroundUrl})`,
+    backgroundImage: (props) => `url(${props.backgroundUrl})`,
     backgroundSize: 'cover',
     minHeight: '60vh',
     display: 'flex',
@@ -13,14 +13,14 @@ const styles = {
     color: 'white',
     paddingTop: 80,
     '@media(min-width: 700px)': {
-      minHeight: '75vh'
-    }
+      minHeight: '75vh',
+    },
   },
   Headline: {
-    marginBottom: 0
+    marginBottom: 0,
   },
   PersonInfo: {
-    textAlign: 'center'
+    textAlign: 'center',
   },
   Avatar: {
     width: '40vh',
@@ -30,9 +30,9 @@ const styles = {
     borderRadius: '50%',
     '@media(min-width: 700px)': {
       maxWidth: '250px',
-      maxHeight: '250px'
-    }
-  }
+      maxHeight: '250px',
+    },
+  },
 };
 
 const Teaser = ({ classes, backgroundUrl, avatarUrl }) => (
@@ -42,7 +42,7 @@ const Teaser = ({ classes, backgroundUrl, avatarUrl }) => (
     <p className={classes.PersonInfo}>
       JavaScript Freelancer
       <br />
-      <small>Kassel, Germany</small>
+      <small>Berlin, Germany</small>
     </p>
   </header>
 );
