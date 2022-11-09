@@ -22,7 +22,7 @@
   },
   "homepage": "https://github.com/revrng/reneviering.de-ui#readme",
   "devDependencies": {
-    "@storybook/react": "3.3.15",
+    "@storybook/react": "6.5.13",
     "babel-cli": "6.26.0",
     "babel-core": "6.26.3",
     "babel-plugin-transform-class-properties": "^6.24.1",
